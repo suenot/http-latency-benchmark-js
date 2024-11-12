@@ -69,8 +69,9 @@ Mean time: 87.50 ms
 
 ## Notes
 
-- **Median Time**: The median response time among all requests.
-- **Mean Time**: The average response time of all requests.
+- Warming Up: The first request is a "warming-up" request that is executed but not included in the statistical calculations. Its purpose is to prepare the system for more accurate measurements by eliminating potential initial latency spikes.
+- Median Time: The median response time among all requests.
+- Mean Time: The average response time of all requests.
 - The script detects the client’s IP address and includes it in the report, providing context based on location.
 - If a request fails, the error will be logged, and that request will not be included in the statistical calculations.
 
@@ -78,4 +79,5 @@ Mean time: 87.50 ms
 
 - Customizable number of request repetitions.
 - Automatic calculation of minimum, maximum, median, and mean response times.
+- Warm-up request is performed before the actual test starts, but its time is not included in the results.
 - Optional feature to send the results to a specified server endpoint for analysis.
